@@ -129,38 +129,49 @@ section {
 }
 .banner-img-bottom-container{
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    height: 500px;
+    min-height: 600px;
     width: 1200px;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-content: center;
     justify-content: center;
     
 }
+
 .location-title{
     width: 100%;
-    flex-basis: 100%;
     text-align: center;
     font-size:32px;
 }
 
 .location-card{
-    margin: 0px 20px;
+    margin: 15px 20px;
     height: 300px;
     width: 300px;
     background: #000;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.page-footer{
-    /* width: 1200px; */
-    justify-content: center;
-    margin: 0 auto;
-    /* margin-left: 50%; */
-    /* margin-right: 50%; */
+.location-card h2 {
+    flex-basis:100%;
+    text-align: center;
+    padding: 10px 0px;
 }
-.footer-text .footer-copyright{
-    margin: 0 auto;
+
+.footer-text{
+    text-align: center;
+    height: 200px;
+}
+.footer-copyright {
+    margin-left: 20px;
+    text-align: left;
 }
